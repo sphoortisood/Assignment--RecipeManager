@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Recipe Manager</title>
+<style>
+.vl {
+    border-left: 1px solid black;
+    height: 660px;
+    position: absolute;
+    left: 20%;
+    margin-left: -3px;
+    top: 0;
+}
+</style>
+</head>
+<body>
+<div ng-view id = "container"> 
+  <h1 align = "center">  Recipe manager</h1>
+   <hr>			
+             <select id = "myList">
+             <option disabled selected value> Recipe List </option>
+               <option value = "1">one</option>	
+               <option value = "2">two</option>
+               <option value = "3">three</option>
+               <option value = "4">four</option>
+             </select>
+             <br>
+             <br>	
+             <button type="button">Add Recipe</button>
+             <h1 align = "center"> Welcome to Recipe Manager </h1>	 
+   		<div class="vl"></div>		
+</div>
+</body>
+</html>
